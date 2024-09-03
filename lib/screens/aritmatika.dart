@@ -86,6 +86,8 @@ class Aritmatika extends ConsumerWidget {
                             double.tryParse(number2Controller.text) ?? 0;
                         ref.read(number1Provider.notifier).state = number1;
                         ref.read(number2Provider.notifier).state = number2;
+                        number1Controller.text = "0";
+                        number2Controller.text = "0";
                       }
                     },
                   );
